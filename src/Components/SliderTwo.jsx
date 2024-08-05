@@ -1,13 +1,13 @@
 import React from "react";
-import slide2 from "../../public/slide2.jpg";
+import anar from "../../public/banner/anar.jpg";
 import { LuShoppingBag } from "react-icons/lu";
 
 const SliderTwo = () => {
   return (
-    <div className="h-screen w-full flex items-center justify-between px-16 bg-gradient-to-b to-[#FEB8C0] from-[#DC5E6A]">
+    <div className="h-screen w-full flex items-center justify-between pl-16  bg-white">
       <div>
         <div className="font-oswald font-<weight>  font-semibold uppercase text-7xl text-white  ">
-          <h1 className="">
+          <h1 className="text-red-900">
             Made With Ruby <br /> Like <br />{" "}
             <span className="text-pink-700">Pomegranates</span>{" "}
           </h1>
@@ -21,7 +21,7 @@ const SliderTwo = () => {
           </h1>
         </div>
       </div>
-      <img src={slide2} alt="" className="h-full" />
+      <img src={anar} alt="" className="h-full" />
     </div>
   );
 };

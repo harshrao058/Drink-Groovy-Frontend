@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import slide5 from '../../public/slide5.jpg';
+import mango from '../../public/banner/mango.jpg';
 import { LuShoppingBag } from "react-icons/lu";
 import gsap from 'gsap';
 
@@ -9,44 +9,15 @@ const SliderFive = () => {
   const buttonRef = useRef();
   const imageRef = useRef();
 
-  useEffect(() => {
-    gsap.from(textRef.current, { 
-      duration: 1, 
-      y: -50, 
-      opacity: 0, 
-      ease: 'power3.out', 
-      delay: 0.5 
-    });
-    gsap.from(subTextRef.current, { 
-      duration: 1, 
-      y: 50, 
-      opacity: 0, 
-      ease: 'power3.out', 
-      delay: 1 
-    });
-    gsap.from(buttonRef.current, { 
-      duration: 1, 
-      scale: 0.5, 
-      opacity: 0, 
-      ease: 'back.out(1.7)', 
-      delay: 1.5 
-    });
-    gsap.from(imageRef.current, { 
-      duration: 1.5, 
-      x: 100, 
-      opacity: 0, 
-      ease: 'power3.out', 
-      delay: 0.5 
-    });
-  }, []);
+ 
 
   return (
-    <div className="h-screen w-full flex items-center justify-between px-16 bg-[#F8D148]">
+    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[#ffffff]">
       <div>
         <div ref={textRef} className="font-oswald font-semibold uppercase text-7xl text-white">
-          <h1>
+          <h1 className='text-[#D9781B]'>
             Made With 
-            <br /> Topical <br /> <span className="text-[#F2B131]">
+             Topical <br /> <span className="text-[#F2B131]">
               Manogo
             </span>{" "}
           </h1>
@@ -60,7 +31,7 @@ const SliderFive = () => {
           </h1>
         </div>
       </div>
-      <img ref={imageRef} src={slide5} alt="" className="h-full" />
+      <img ref={imageRef} src={mango} alt="" className="h-full" />
     </div>
   );
 };

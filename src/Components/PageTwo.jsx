@@ -8,10 +8,14 @@ import SliderTwo from "./SliderTwo";
 import SliderThree from "./SliderThree";
 import SliderFour from "./SliderFour";
 import SliderFive from "./SliderFive";
+import SliderSix from "./SliderSix.jsx";
+import SliderSeven from "./SliderSeven.jsx";
 
 // const sliders = [<Slider />, <SliderTwo />, <SliderThree />, <SliderFour />, <SliderFive />];
 const sliders = [
   <SliderTwo />,
+  <SliderSix />,
+  <SliderSeven />,
 
   <SliderFour />,
 
