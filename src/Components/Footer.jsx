@@ -11,25 +11,17 @@ const Footer = () => {
       //     "url('https://embedsocial.com/admin/mediacdn/feed-media/18006/18006077030309004/image_0_large.webp')",
       // }}
     >
-      <div className="container mx-auto w-full flex flex-col  md:flex-row justify-center items-center">
-        <div className="flelex-col w-1/3 items-center justify-center mb-6 md:mb-0">
+      <div className="container mx-auto w-full flex flex-col gap-8 md:flex-row justify-center items-center">
+        <div className="flex lex-col w-1/4 items-start justfy-center mb-6 md:mb-0">
           <img
             src="../../logo.png"
             alt="Fruits for Drinks"
             className="h-16 mb-4"
           />
-          <p className="text-sm">
-           
-            Enhaz Beverages Pvt. Ltd.
-            <br />
-            D-09, Second Floor, Panchsheel Enclave, Above HDFC Bank Ltd, Soami
-            Nagar Branch,
-            <br />
-            New Delhi - 110017
-          </p>
+          
         </div>
-        <div className="flelex-col w-1/3 items-center mb-6 md:mb-0">
-          <ul className="text-center space-y-2">
+        <div className="flelex-col w-1/2 items-center mb- md:mb-0">
+          <ul className="text-center space-y2 flex items-center justify-between">
             <li>
               <a href="/" className="hover:text-blue-600">
                 Home
@@ -62,7 +54,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col w-1/3 items-center">
+        <div className="flex flex-col w-1/4 items-center">
           <div className="flex space-x-4 mb-4">
             <a
               href="https://instagram.com"
