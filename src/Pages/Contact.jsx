@@ -281,8 +281,8 @@ export default function Contact() {
 
         <hr />
 
-        <div className="mb-4 flex gap-8 mt-8 px-16 h-[100vh]">
-          <div className="w-1/2 h-full  flex flex-col items-center justify-around">
+        <div className="mb-4 flex gap-8 mt-8 px-16 ">
+          <div className="w-1/2 h-{}  flex flex-col items-center justify-around">
             <h1 className="text-4xl text-center font-semibold">
               Manufacturing Units
             </h1>
