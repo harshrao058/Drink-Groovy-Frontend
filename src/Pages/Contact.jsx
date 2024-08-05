@@ -45,170 +45,169 @@ export default function Contact() {
   return (
     <div>
       <div className="mx-auto  ">
-      {isPopupOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white px-4 py-8 rounded-lg relative w-full max-w-lg">
-            <button
-              onClick={closePopup}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-            >
-              <X className="h-6 w-6" />
-            </button>
-            <div className="flex justify-center items-center h-full flex-col">
-             
-              <form className="w-full bg-white px-8 rounded-md">
-                <div className="mb-2">
-                  <label
-                    className="block text-gray-700 text-sm font-bold "
-                    htmlFor="contactFor"
-                  >
-                    Contact for
-                  </label>
-                  <select
-                    className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="contactFor"
-                    defaultValue=""
-                  >
-                    <option value="" disabled>
-                      Select Contact For
-                    </option>
-                    <option value="Stockiest">Stockiest</option>
-                    <option value="Distributor">Distributor</option>
-                    <option value="Whole sealer">Whole sealer</option>
-                    <option value="Retailer">Retailer</option>
-                  </select>
-                </div>
-                <div className="flex mb-2">
-                  <div className="w-1/2 pr-2">
+        {isPopupOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div className="bg-white px-4 py-8 rounded-lg relative w-full max-w-lg">
+              <button
+                onClick={closePopup}
+                className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+              >
+                <X className="h-6 w-6" />
+              </button>
+              <div className="flex justify-center items-center h-full flex-col">
+                <form className="w-full bg-white px-8 rounded-md">
+                  <div className="mb-2">
                     <label
                       className="block text-gray-700 text-sm font-bold "
-                      htmlFor="firstName"
+                      htmlFor="contactFor"
                     >
-                      First Name
+                      Contact for
+                    </label>
+                    <select
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="contactFor"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>
+                        Select Contact For
+                      </option>
+                      <option value="Stockiest">Stockiest</option>
+                      <option value="Distributor">Distributor</option>
+                      <option value="Whole sealer">Whole sealer</option>
+                      <option value="Retailer">Retailer</option>
+                    </select>
+                  </div>
+                  <div className="flex mb-2">
+                    <div className="w-1/2 pr-2">
+                      <label
+                        className="block text-gray-700 text-sm font-bold "
+                        htmlFor="firstName"
+                      >
+                        First Name
+                      </label>
+                      <input
+                        className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="firstName"
+                        type="text"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div className="w-1/2 pl-2">
+                      <label
+                        className="block text-gray-700 text-sm font-bold "
+                        htmlFor="lastName"
+                      >
+                        Last Name
+                      </label>
+                      <input
+                        className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="lastName"
+                        type="text"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex mb-2">
+                    <div className="w-1/2 pr-2">
+                      <label
+                        className="block text-gray-700 text-sm font-bold "
+                        htmlFor="contact"
+                      >
+                        Contact
+                      </label>
+                      <input
+                        className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="contact"
+                        type="text"
+                        placeholder="Contact"
+                      />
+                    </div>
+                    <div className="w-1/2 pl-2">
+                      <label
+                        className="block text-gray-700 text-sm font-bold "
+                        htmlFor="email"
+                      >
+                        Email
+                      </label>
+                      <input
+                        className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="email"
+                        type="email"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex mb-2">
+                    <div className="w-1/2 pr-2">
+                      <label
+                        className="block text-gray-700 text-sm font-bold "
+                        htmlFor="state"
+                      >
+                        State
+                      </label>
+                      <input
+                        className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="state"
+                        type="text"
+                        placeholder="State"
+                      />
+                    </div>
+                    <div className="w-1/2 pl-2">
+                      <label
+                        className="block text-gray-700 text-sm font-bold "
+                        htmlFor="districtArea"
+                      >
+                        District/Area
+                      </label>
+                      <input
+                        className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        id="districtArea"
+                        type="text"
+                        placeholder="District, Area"
+                      />
+                    </div>
+                  </div>
+                  <div className="mb-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold "
+                      htmlFor="experience"
+                    >
+                      Past Experience if any
                     </label>
                     <input
                       className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="firstName"
+                      id="experience"
                       type="text"
-                      placeholder="First Name"
+                      placeholder="Experience"
                     />
                   </div>
-                  <div className="w-1/2 pl-2">
+                  <div className="mb-">
                     <label
                       className="block text-gray-700 text-sm font-bold "
-                      htmlFor="lastName"
+                      htmlFor="message"
                     >
-                      Last Name
+                      Text Message
                     </label>
-                    <input
+                    <textarea
                       className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="lastName"
-                      type="text"
-                      placeholder="Last Name"
-                    />
+                      id="message"
+                      rows="4"
+                      placeholder="Text Message"
+                    ></textarea>
                   </div>
-                </div>
-                <div className="flex mb-2">
-                  <div className="w-1/2 pr-2">
-                    <label
-                      className="block text-gray-700 text-sm font-bold "
-                      htmlFor="contact"
+                  <div className="flex justify-center">
+                    <button
+                      type="submit"
+                      className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
                     >
-                      Contact
-                    </label>
-                    <input
-                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="contact"
-                      type="text"
-                      placeholder="Contact"
-                    />
+                      Submit
+                    </button>
                   </div>
-                  <div className="w-1/2 pl-2">
-                    <label
-                      className="block text-gray-700 text-sm font-bold "
-                      htmlFor="email"
-                    >
-                      Email
-                    </label>
-                    <input
-                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="email"
-                      type="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                </div>
-                <div className="flex mb-2">
-                  <div className="w-1/2 pr-2">
-                    <label
-                      className="block text-gray-700 text-sm font-bold "
-                      htmlFor="state"
-                    >
-                      State
-                    </label>
-                    <input
-                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="state"
-                      type="text"
-                      placeholder="State"
-                    />
-                  </div>
-                  <div className="w-1/2 pl-2">
-                    <label
-                      className="block text-gray-700 text-sm font-bold "
-                      htmlFor="districtArea"
-                    >
-                      District/Area
-                    </label>
-                    <input
-                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="districtArea"
-                      type="text"
-                      placeholder="District, Area"
-                    />
-                  </div>
-                </div>
-                <div className="mb-2">
-                  <label
-                    className="block text-gray-700 text-sm font-bold "
-                    htmlFor="experience"
-                  >
-                    Past Experience if any
-                  </label>
-                  <input
-                    className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="experience"
-                    type="text"
-                    placeholder="Experience"
-                  />
-                </div>
-                <div className="mb-">
-                  <label
-                    className="block text-gray-700 text-sm font-bold "
-                    htmlFor="message"
-                  >
-                    Text Message
-                  </label>
-                  <textarea
-                    className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="message"
-                    rows="4"
-                    placeholder="Text Message"
-                  ></textarea>
-                </div>
-                <div className="flex justify-center">
-                  <button
-                    type="submit"
-                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
         {/* Hero Map */}
         <div
           className="px-16 bg-fixed bg-cover bg-center "
@@ -282,13 +281,16 @@ export default function Contact() {
 
         <hr />
 
-        <div className="mb-4 flex gap-8 mt-8 px-16">
-          <div className="w-1/2 ">
-            <div className="mb-8 flex gap-y-6 flex-col lg:justify-around ">
+        <div className="mb-4 flex gap-8 mt-8 px-16 h-[100vh]">
+          <div className="w-1/2 h-full  flex flex-col items-center justify-around">
+            <h1 className="text-4xl text-center font-semibold">
+              Manufacturing Units
+            </h1>
+            {/* <div className="mb-8 flex gap-y-6 flex-col lg:justify-around ">
               {locations.map((location) => (
                 <div
                   key={location.title}
-                  className="flex bg-rd-800 border-[2px] px-4 py-2 rounded-xl flex-col space-y-3  "
+                  className="flex bg-rd-800 w-full border-[2px] px-4 py-2 rounded-xl flex-col space-y-3  "
                 >
                   <p className="w-full flex text-xl items-center font-semibold  text-gray-900">
                     <MapPin className="h-5 w-5 text-red-500" />
@@ -300,13 +302,36 @@ export default function Contact() {
                   <p className="text-sm font-medium">{location.address}</p>
                 </div>
               ))}
+            </div> */}
+            <div className=" w-full py-8 border-[1px] rounded-xl px-4 ">
+              <p className="w-full flex text-xl items-center font-semibold  text-gray-900">
+                <MapPin className="h-5 w-5 text-red-500" />
+                Manufacturing Unit 1
+              </p>
+              <p className="w-full text-base text-gray-700">
+              Mon-Sat 9am to 5pm.
+              </p>
+              <p className="text-sm font-medium">UttaraKhand</p>
+            </div>
+
+            <div className=" w-full py-8 border-[1px] rounded-xl px-4 ">
+              <p className="w-full flex text-xl items-center font-semibold  text-gray-900">
+                <MapPin className="h-5 w-5 text-red-500" />
+                Manufacturing Unit 2
+              </p>
+              <p className="w-full text-base text-gray-700">
+              Mon-Sat 9am to 5pm.
+              </p>
+              <p className="text-sm font-medium">Jammu Katra</p>
             </div>
           </div>
           <div className="w-1/2">
             <div className="flex justify-center items-center in-h-screen flex-col ">
-              <h1 className="pb-4 uppercase text-xl font-semibold underlin">Our friendly team would love to hear from you</h1>
+              <h1 className="pb-4 uppercase text-xl font-semibold underlin">
+                Our friendly team would love to hear from you
+              </h1>
               <form className="w-full  bg-white px-8 rounded-md ">
-                <div className="mb-4">
+                <div className="mb-2">
                   <label
                     className="block text-gray-700 text-sm font-bold "
                     htmlFor="contactFor"
@@ -327,7 +352,7 @@ export default function Contact() {
                     <option value="retailer">Retailer</option>
                   </select>
                 </div>
-                <div className="flex mb-4">
+                <div className="flex mb-2">
                   <div className="w-1/2 pr-2">
                     <label
                       className="block text-gray-700 text-sm font-bold mb-2"
@@ -357,7 +382,7 @@ export default function Contact() {
                     />
                   </div>
                 </div>
-                <div className="flex mb-4">
+                <div className="flex mb-2">
                   <div className="w-1/2 pr-2">
                     <label
                       className="block text-gray-700 text-sm font-bold mb-2"
@@ -387,7 +412,7 @@ export default function Contact() {
                     />
                   </div>
                 </div>
-                <div className="flex mb-4">
+                <div className="flex mb-2">
                   <div className="w-1/2 pr-2">
                     <label
                       className="block text-gray-700 text-sm font-bold mb-2"
@@ -417,7 +442,7 @@ export default function Contact() {
                     />
                   </div>
                 </div>
-                <div className="mb-4">
+                <div className="mb-2">
                   <label
                     className="block text-gray-700 text-sm font-bold mb-2"
                     htmlFor="experience"
