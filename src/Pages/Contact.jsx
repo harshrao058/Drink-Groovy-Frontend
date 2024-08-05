@@ -47,96 +47,165 @@ export default function Contact() {
       <div className="mx-auto  ">
       {isPopupOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-8 rounded-lg relative">
+          <div className="bg-white px-4 py-8 rounded-lg relative w-full max-w-lg">
             <button
               onClick={closePopup}
               className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
             >
               <X className="h-6 w-6" />
             </button>
-            <form action="" className=" space-y-4 ">
-            <p className=" text-xl font-semibold uppercase  text-gray-800">
-              Our friendly team would love to hear from you
-            </p>
-            <div className="grid w-full gap-y-4 md:gap-x-4  lg:grid-cols-2">
-              <div className="grid w-full  items-center gap-1.5">
-                <label
-                  className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="first_name"
-                >
-                  First Name
-                </label>
-                <input
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                  type="text"
-                  id="first_name"
-                  placeholder="First Name"
-                />
-              </div>
-              <div className="grid w-full  items-center gap-1.5">
-                <label
-                  className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="last_name"
-                >
-                  Last Name
-                </label>
-                <input
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                  type="text"
-                  id="last_name"
-                  placeholder="Last Name"
-                />
-              </div>
+            <div className="flex justify-center items-center h-full flex-col">
+             
+              <form className="w-full bg-white px-8 rounded-md">
+                <div className="mb-2">
+                  <label
+                    className="block text-gray-700 text-sm font-bold "
+                    htmlFor="contactFor"
+                  >
+                    Contact for
+                  </label>
+                  <select
+                    className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="contactFor"
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Select Contact For
+                    </option>
+                    <option value="Stockiest">Stockiest</option>
+                    <option value="Distributor">Distributor</option>
+                    <option value="Whole sealer">Whole sealer</option>
+                    <option value="Retailer">Retailer</option>
+                  </select>
+                </div>
+                <div className="flex mb-2">
+                  <div className="w-1/2 pr-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold "
+                      htmlFor="firstName"
+                    >
+                      First Name
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="firstName"
+                      type="text"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div className="w-1/2 pl-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold "
+                      htmlFor="lastName"
+                    >
+                      Last Name
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="lastName"
+                      type="text"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div className="flex mb-2">
+                  <div className="w-1/2 pr-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold "
+                      htmlFor="contact"
+                    >
+                      Contact
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="contact"
+                      type="text"
+                      placeholder="Contact"
+                    />
+                  </div>
+                  <div className="w-1/2 pl-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold "
+                      htmlFor="email"
+                    >
+                      Email
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="email"
+                      type="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div className="flex mb-2">
+                  <div className="w-1/2 pr-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold "
+                      htmlFor="state"
+                    >
+                      State
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="state"
+                      type="text"
+                      placeholder="State"
+                    />
+                  </div>
+                  <div className="w-1/2 pl-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold "
+                      htmlFor="districtArea"
+                    >
+                      District/Area
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="districtArea"
+                      type="text"
+                      placeholder="District, Area"
+                    />
+                  </div>
+                </div>
+                <div className="mb-2">
+                  <label
+                    className="block text-gray-700 text-sm font-bold "
+                    htmlFor="experience"
+                  >
+                    Past Experience if any
+                  </label>
+                  <input
+                    className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="experience"
+                    type="text"
+                    placeholder="Experience"
+                  />
+                </div>
+                <div className="mb-">
+                  <label
+                    className="block text-gray-700 text-sm font-bold "
+                    htmlFor="message"
+                  >
+                    Text Message
+                  </label>
+                  <textarea
+                    className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="message"
+                    rows="4"
+                    placeholder="Text Message"
+                  ></textarea>
+                </div>
+                <div className="flex justify-center">
+                  <button
+                    type="submit"
+                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
-            <div className="grid w-full  items-center gap-1.5">
-              <label
-                className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                htmlFor="email"
-              >
-                Email
-              </label>
-              <input
-                className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                type="text"
-                id="email"
-                placeholder="Email"
-              />
-            </div>
-            <div className="grid w-full  items-center gap-1.5">
-              <label
-                className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                htmlFor="phone_number"
-              >
-                Phone number
-              </label>
-              <input
-                className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                type="tel"
-                id="phone_number"
-                placeholder="Phone number"
-              />
-            </div>
-            <div className="grid w-full  items-center gap-1.5">
-              <label
-                className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                htmlFor="message"
-              >
-                Message
-              </label>
-              <textarea
-                className="flex h-20 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                id="message"
-                placeholder="Leave us a message"
-                cols={3}
-              />
-            </div>
-            <button
-              type="button"
-              className="w-full rounded-md bg-zinc-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-            >
-              Send Message
-            </button>
-          </form>
           </div>
         </div>
       )}
@@ -148,41 +217,40 @@ export default function Contact() {
           }}
         >
           <div className="w-full backdrop-blur-sm">
-            <div className="flex flex-col space-y- pb-1 pt-12 md:pt-32">
-              <div className="max-w-max rounded-full border bg-gray-50 p-1 px-3">
-                <p className="text-xs font-semibold leading-normal md:text-sm">
-                  Contact the company
-                </p>
-              </div>
-              <p className="text-sm font-bold text-gray-900 md:text-4xl md:py-4 backdrop-blur-sm">
+            <div className="flex flex-col space-y- pb-1 md:pt-20">
+              <p className="text-sm text-center font-bold text-gray-900 md:text-4xl md:py-4 backdrop-blur-sm">
                 Get in touch
               </p>
             </div>
-
-            <div className=" grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-2 px-16 backdrop-blur-sm">
-              <div className="border-zinc-800 border-2 py-4 px-4 rounded-xl">
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-800">
-                  <GoMail className="h-9 w-9 text-green-500 " />
+            <div className="flex w-full">
+              <div className="w-1/2"></div>
+              <div className="w-1/2">
+                <div className=" grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-2  backdrop-blur-sm">
+                  <div className="border-zinc-800 border-2 py-4 px-4 rounded-xl">
+                    <div className="mx-auto flex h w items-center justify-center rounded-full ">
+                      <GoMail className="h-9 w-9 text-green-500 " />
+                    </div>
+                    <p className="mt-2 text-xs text-black">
+                      Please email contact form and we will be assist you. We
+                      wotk with you.
+                    </p>
+                    <h3 className="mt-2 text-base font-semibold text-black">
+                      sales@enhazbeverages.com
+                    </h3>
+                  </div>
+                  <div className="border-zinc-800 border-2 py-4 px-4 rounded-xl">
+                    <div className="mx-auto flex h w items-center justify-center rounded-full ">
+                      <PiPhoneCall className="h-9 w-9 text-blue-500" />
+                    </div>
+                    <p className="mt-2 text-xs text-black">
+                      Please call us and we will be happy to assist you we work
+                      with you.
+                    </p>
+                    <h3 className="mt-2 text-base font-semibold text-black">
+                      9876543210
+                    </h3>
+                  </div>
                 </div>
-                <p className="mt-2 text-sm text-black">
-                  Please email contact form and we will be assist you. We wotk
-                  with you.
-                </p>
-                <h3 className="mt-2 text-lg font-semibold text-black">
-                  abcd@contact.com
-                </h3>
-              </div>
-              <div className="border-zinc-800 border-2 py-4 px-4 rounded-xl">
-                <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-800">
-                  <PiPhoneCall className="h-9 w-9 text-blue-500" />
-                </div>
-                <p className="mt-2 text-sm text-black">
-                  Please call us and we will be happy to assist you we work with
-                  you.
-                </p>
-                <h3 className="mt-2 text-lg font-semibold text-black">
-                  9876543210
-                </h3>
               </div>
             </div>
           </div>
@@ -234,89 +302,160 @@ export default function Contact() {
               ))}
             </div>
           </div>
-          <form action="" className=" space-y-4 w-1/2">
-            <p className=" text-xl font-semibold uppercase  text-gray-800">
-              Our friendly team would love to hear from you
-            </p>
-            <div className="grid w-full gap-y-4 md:gap-x-4  lg:grid-cols-2">
-              <div className="grid w-full  items-center gap-1.5">
-                <label
-                  className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="first_name"
-                >
-                  First Name
-                </label>
-                <input
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                  type="text"
-                  id="first_name"
-                  placeholder="First Name"
-                />
-              </div>
-              <div className="grid w-full  items-center gap-1.5">
-                <label
-                  className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="last_name"
-                >
-                  Last Name
-                </label>
-                <input
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                  type="text"
-                  id="last_name"
-                  placeholder="Last Name"
-                />
-              </div>
+          <div className="w-1/2">
+            <div className="flex justify-center items-center in-h-screen flex-col ">
+              <h1 className="pb-4 uppercase text-xl font-semibold underlin">Our friendly team would love to hear from you</h1>
+              <form className="w-full  bg-white px-8 rounded-md ">
+                <div className="mb-4">
+                  <label
+                    className="block text-gray-700 text-sm font-bold "
+                    htmlFor="contactFor"
+                  >
+                    Contact for
+                  </label>
+                  <select
+                    className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="contactFor"
+                    defaultValue=""
+                  >
+                    <option value="" disabled>
+                      Select Contact For
+                    </option>
+                    <option value="Stockiest">Stockiest</option>
+                    <option value="Distributor">Distributor</option>
+                    <option value="Whole sealer">Whole sealer</option>
+                    <option value="retailer">Retailer</option>
+                  </select>
+                </div>
+                <div className="flex mb-4">
+                  <div className="w-1/2 pr-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="firstName"
+                    >
+                      First Name
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="firstName"
+                      type="text"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div className="w-1/2 pl-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="lastName"
+                    >
+                      Last Name
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="lastName"
+                      type="text"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  <div className="w-1/2 pr-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="contact"
+                    >
+                      Contact
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="contact"
+                      type="text"
+                      placeholder="Contact"
+                    />
+                  </div>
+                  <div className="w-1/2 pl-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="email"
+                    >
+                      Email
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="email"
+                      type="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div className="flex mb-4">
+                  <div className="w-1/2 pr-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="state"
+                    >
+                      State
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="state"
+                      type="text"
+                      placeholder="State"
+                    />
+                  </div>
+                  <div className="w-1/2 pl-2">
+                    <label
+                      className="block text-gray-700 text-sm font-bold mb-2"
+                      htmlFor="districtArea"
+                    >
+                      District/Area
+                    </label>
+                    <input
+                      className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="districtArea"
+                      type="text"
+                      placeholder="District, Area"
+                    />
+                  </div>
+                </div>
+                <div className="mb-4">
+                  <label
+                    className="block text-gray-700 text-sm font-bold mb-2"
+                    htmlFor="experience"
+                  >
+                    Past Experience if any
+                  </label>
+                  <input
+                    className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="experience"
+                    type="text"
+                    placeholder="Experience"
+                  />
+                </div>
+                <div className="mb-6">
+                  <label
+                    className="block text-gray-700 text-sm font-bold mb-2"
+                    htmlFor="message"
+                  >
+                    Text Message
+                  </label>
+                  <textarea
+                    className="appearance-none border-2 border-gray-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="message"
+                    rows="4"
+                    placeholder="Text Message"
+                  ></textarea>
+                </div>
+                <div className="flex justify-center">
+                  <button
+                    type="submit"
+                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
-            <div className="grid w-full  items-center gap-1.5">
-              <label
-                className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                htmlFor="email"
-              >
-                Email
-              </label>
-              <input
-                className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                type="text"
-                id="email"
-                placeholder="Email"
-              />
-            </div>
-            <div className="grid w-full  items-center gap-1.5">
-              <label
-                className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                htmlFor="phone_number"
-              >
-                Phone number
-              </label>
-              <input
-                className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                type="tel"
-                id="phone_number"
-                placeholder="Phone number"
-              />
-            </div>
-            <div className="grid w-full  items-center gap-1.5">
-              <label
-                className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                htmlFor="message"
-              >
-                Message
-              </label>
-              <textarea
-                className="flex h-20 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                id="message"
-                placeholder="Leave us a message"
-                cols={3}
-              />
-            </div>
-            <button
-              type="button"
-              className="w-full rounded-md bg-zinc-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-            >
-              Send Message
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
