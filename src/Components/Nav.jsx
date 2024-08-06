@@ -76,6 +76,18 @@ const Nav = () => {
             Gallery
           </NavLink>
           <NavLink
+            to="/media"
+            className={({ isActive }) =>
+              `cursor-pointer font-semibold text-sm ${
+                isActive
+                  ? "bg-zinc-800 transition-all ease-in-out text-white px-2 py-1"
+                  : "hover:text-gray-400"
+              }`
+            }
+          >
+           Media
+          </NavLink>
+          <NavLink
             to="/about"
             className={({ isActive }) =>
               `cursor-pointer font-semibold text-sm ${

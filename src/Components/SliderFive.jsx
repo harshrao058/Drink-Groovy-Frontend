@@ -12,12 +12,12 @@ const SliderFive = () => {
  
 
   return (
-    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[#ffffff]">
+    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[#FFDA55]">
       <div>
         <div ref={textRef} className="font-oswald font-semibold uppercase text-7xl text-white">
-          <h1 className='text-[#D9781B]'>
+          <h1 className='text-[#c0732b]'>
             Made With 
-             Topical <br /> <span className="text-[#F2B131]">
+             Topical <br /> <span className="text-[#ffffff]">
               Manogo
             </span>{" "}
           </h1>
