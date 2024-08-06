@@ -10,38 +10,75 @@ const reviews = [
     name: "Simrat Ghai",
     username: "@simrat_ghai",
     body: "Awesome drink 🥤",
-    img: {simrat},
+    img: simrat,
   },
   {
     name: "Jovial Mudsssir",
     username: "@jovial_mudassir",
     body: "Too Yummy To Taste It..... Best Ever Drink To Taste It...",
-    img: {jovial},
+    img: jovial,
   },
   {
     name: "Daljeet Singh",
     username: "@daljeetsingh.singh.1969",
     body: "Nice taste , groovy mixed fruit",
-    img: {daljeet},
+    img: daljeet,
   },
   {
     name: "Ashish Kumar",
     username: "@ashishkumarguptasai",
     body: "Jabardast test hai hamne piya hai",
-    img: {ashish},
+    img: ashish,
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
+    name: "Simrat Ghai",
+    username: "@simrat_ghai",
+    body: "Awesome drink 🥤",
+    img: simrat,
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
+    name: "Jovial Mudsssir",
+    username: "@jovial_mudassir",
+    body: "Too Yummy To Taste It..... Best Ever Drink To Taste It...",
+    img: jovial,
   },
+  {
+    name: "Daljeet Singh",
+    username: "@daljeetsingh.singh.1969",
+    body: "Nice taste , groovy mixed fruit",
+    img: daljeet,
+  },
+  {
+    name: "Ashish Kumar",
+    username: "@ashishkumarguptasai",
+    body: "Jabardast test hai hamne piya hai",
+    img: ashish,
+  },
+  {
+    name: "Simrat Ghai",
+    username: "@simrat_ghai",
+    body: "Awesome drink 🥤",
+    img: simrat
+  },
+  {
+    name: "Jovial Mudsssir",
+    username: "@jovial_mudassir",
+    body: "Too Yummy To Taste It..... Best Ever Drink To Taste It...",
+    img: jovial,
+  },
+  {
+    name: "Daljeet Singh",
+    username: "@daljeetsingh.singh.1969",
+    body: "Nice taste , groovy mixed fruit",
+    img: daljeet,
+  },
+  {
+    name: "Ashish Kumar",
+    username: "@ashishkumarguptasai",
+    body: "Jabardast test hai hamne piya hai",
+    img: ashish,
+  },
+ 
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
@@ -95,7 +132,7 @@ export default function MarqueeDemo() {
           Reviews
         </h1>
 
-        <Marquee pauseOnHover className="[--duration:20s]">
+        <Marquee pauseOnHover className="[--duration:50s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}

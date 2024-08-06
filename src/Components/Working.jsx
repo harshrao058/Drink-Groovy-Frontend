@@ -33,7 +33,7 @@ const Working = () => {
 
           <NumberTicker value={260} color="white" className="tracking-tight text-2xl" />
         </div>
-        <div className="flex  items-center justify-center gap-6 w-1/3">
+        <div className="flex  items-center justify-center gap-2 w-1/3">
           <div className="flex items-center gap-2">
             <FaUsers className="text-2xl" />
             <h1 className="text-2xl">Customers</h1>
