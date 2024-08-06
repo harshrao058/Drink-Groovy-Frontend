@@ -14,14 +14,14 @@ import SliderSeven from "./SliderSeven.jsx";
 // const sliders = [<Slider />, <SliderTwo />, <SliderThree />, <SliderFour />, <SliderFive />];
 const sliders = [
   <SliderTwo />,
-  // <SliderSix />,
-  // <SliderSeven />,
+  <SliderSix />,
+  <SliderSeven />,
 
-  // <SliderFour />,
+  <SliderFour />,
 
-  // <Slider />,
-  // <SliderThree />,
-  // <SliderFive />,
+  <Slider />,
+  <SliderThree />,
+  <SliderFive />,
 ];
 // const sliders = [<Slider />];
 

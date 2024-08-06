@@ -10,17 +10,17 @@ import allpro from '../../public/allpro.png'
 
 export default function Features() {
   return (
-    <div className="mx-auto max--7xl px-16 pt-4 sm:px-6 lg:px-8">
+    <div className="mx-auto max--7xl px-16 py-4 sm:px-6 lg:px-8 bg-[#3AB54A]">
       <div className="mx-auto ext-center w-full">
-        <h2 className="mt-6 text-2xl items-center justify-center font-bold leading-tight w-full text-black sm:text-4xl lg:text-4xl flex flex-col">
-          <p>COMPLETES YOUR DRINKS, ANY TIME! ANY WHERE! </p>
+        <h2 className="mt-6 text-2xl items-center justify-center font-bold leading-tight w-full text-white sm:text-4xl lg:text-4xl flex flex-col">
+          <p className="font-semibold">COMPLETES YOUR DRINKS, ANY TIME! ANY WHERE! </p>
           <p className="flex"> </p>
           <div className="w-full pt-4 pb-1 ">
           <img src={allpro} alt="" className=" mx-auto  " />
         </div>
         </h2>
         {/* <IoIosTimer className="text-4xl"/> */}
-        <p className="px-64 text-center text-base leading-relaxed text-gray-600">
+        <p className="px-64 text-center text-base leading-relaxed text-gray-100">
           Every sip of our juices takes you down memory lane. <br /> You don’t just
           enjoy the diversity of flavours but dive into a pool of quality fruit
           extracts. <br /> Groovy is not just a drink, it's a story spun together in
@@ -37,10 +37,10 @@ export default function Features() {
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <GiFruitTree  className="h-9 w-9 text-green-500 " />
           </div>
-          <h3 className="mt-2 text-lg font-semibold text-black">
+          <h3 className="mt-2 text-lg font-semibold text-white">
             NATURAL TASTE
           </h3>
-          <p className="mt-2 text-sm text-gray-600">
+          <p className="mt-2 text-sm text-gray-200">
             Our fruit not only matches the flavour of fresh fruit but also
             serves as a fantastic flavour booster to the drink.
           </p>
@@ -49,10 +49,10 @@ export default function Features() {
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <IoBan className="h-9 w-9 text-red-500" />
           </div>
-          <h3 className="mt-2 text-lg font-semibold text-black">
+          <h3 className="mt-2 text-lg font-semibold text-white">
             NO ADDED COLORS/PRESERVATIVES
           </h3>
-          <p className="mt-2 text-sm text-gray-600">
+          <p className="mt-2 text-sm text-gray-200">
             Using fresh fruit is always nice to store your fruits in a locked
             hub. No more fridge full of unloved fruit and veg.
           </p>
@@ -61,10 +61,10 @@ export default function Features() {
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <FaRecycle className="h-9 w-9 text-green-500" />
           </div>
-          <h3 className="mt-2 text-lg font-semibold text-black">
+          <h3 className="mt-2 text-lg font-semibold text-white">
             MINIMUM WASTE
           </h3>
-          <p className="mt-2 text-sm text-gray-600">
+          <p className="mt-2 text-sm text-gray-200">
             Using fresh fruit is always nice to store your fruits in a locked
             hub. No more fridge full of unloved fruit and veg.
           </p>
