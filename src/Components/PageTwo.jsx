@@ -19,7 +19,7 @@ const sliders = [
 
   <SliderFour />,
 
-  <Slider />,
+  // <Slider />,
   <SliderThree />,
   <SliderFive />,
 ];
