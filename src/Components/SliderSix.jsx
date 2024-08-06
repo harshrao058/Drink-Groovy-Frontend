@@ -4,12 +4,12 @@ import { LuShoppingBag } from "react-icons/lu";
 
 const SliderSix = () => {
   return (
-    <div className="h-screen w-full flex items-center justify-between pl-16 ">
+    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[#F8931F]">
         <div>
           <div className="font-oswald font-<weight>  font-semibold uppercase text-7xl text-white  ">
-            <h1 className="text-orange-500">
+            <h1 className="text-orange-5">
               Made With Fresh
-              <br /> & Ripe <br /> <span className="text-orange-700">
+              <br /> & Ripe <br /> <span className="text-[#FFF531]">
                 mix fruits
               </span>{" "}
             </h1>
