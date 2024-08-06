@@ -54,9 +54,9 @@ const ReviewCard = ({ img, name, username, body }) => {
         " relative w-64 cursor-pointer overflow-hidden bg-white rounded-xl border p-4",
         // light styles
 
-        "border-gray-950/[.1] bg-gray-950/[.01] bg-white hover:bg-gray-950/[.05]",
+        "border-gray-950/[.1] bg-gray-950/[.01] bg-white",
         // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] "
       )}
     >
       <div className="flex  flex-row items-center gap-2  ">
