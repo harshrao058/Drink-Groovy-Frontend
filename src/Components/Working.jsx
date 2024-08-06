@@ -12,17 +12,17 @@ const Working = () => {
         <div className="flex  items-center justify-center gap-2 w-1/3">
           <div className="flex items-center gap-2">
             <PiCity className="text-2xl" />
-            <h1 className="text-2xl">Cites</h1>
+            <h1 className="text-2xl">States</h1>
           </div>
 
-          <NumberTicker value={30}  className="tracking-tight text-2xl"/>
+          <NumberTicker value={14}  className="tracking-tight text-2xl"/>
         </div>
         <div className="flex  items-center justify-center gap-2 w-1/3">
           <div className="flex items-center gap-2">
             <RiEmotionHappyLine className="text-2xl" />
-            <h1 className="text-2xl">Customers</h1>
+            <h1 className="text-2xl">Cities</h1>
           </div>
-          <NumberTicker value={1005626} className="tracking-tight text-2xl" />
+          <NumberTicker value={310} className="tracking-tight text-2xl" />
         </div>
         <div className="flex  items-center justify-center gap-2 w-1/3">
           <div className="flex items-center gap-2">
@@ -31,16 +31,16 @@ const Working = () => {
             
           </div>
 
-          <NumberTicker value={60} color="white" className="tracking-tight text-2xl" />
+          <NumberTicker value={260} color="white" className="tracking-tight text-2xl" />
         </div>
         <div className="flex  items-center justify-center gap-6 w-1/3">
           <div className="flex items-center gap-2">
             <FaUsers className="text-2xl" />
-            <h1 className="text-2xl">States</h1>
+            <h1 className="text-2xl">Customers</h1>
             
           </div>
 
-          <NumberTicker value={12} color="white" className="tracking-tight text-2xl" />
+          <NumberTicker value={125670} color="white" className="tracking-tight text-2xl" />
         </div>
       </div>
     </>
