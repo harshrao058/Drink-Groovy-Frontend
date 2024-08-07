@@ -42,7 +42,7 @@ const About = () => {
       <div className="pt-20 bg-[#F3F1F8]">
         <div className="flex w-full px-16 mt-4">
           <div className="w-1/2 justify-center items-center flex px-4 ">
-            <img src={ourstory} alt="" />
+            <img src="https://images.yourstory.com/cs/21/98e25df018b511e988ceff9061f4e5e7/800x4001-1624454935456.png?mode=crop&crop=faces&ar=16%3A9&format=auto&w=1080&q=75" alt="" />
           </div>
           <div className="w-1/2 justify-cent items-cente flex flex-col gap-3 px-4  text-md">
             <h1 className="text-4xl font-semibold text-center w-full">
