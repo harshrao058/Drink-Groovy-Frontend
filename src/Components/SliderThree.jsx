@@ -1,20 +1,20 @@
 import React from 'react';
-import guava from '../../public/banner/guava.jpg';
+import guava from '../../public/banner/guava.png';
 import { LuShoppingBag } from "react-icons/lu";
 
 const SliderThree = () => {
   return (
-    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[#3AB54A]">
+    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[]">
         <div>
           <div className="font-oswald font-<weight>  font-semibold uppercase text-7xl text-white  ">
-            <h1 className="text-">
+            <h1 className="text-[#3AB54A]">
               Made With Fresh
               <br /> & Ripe <br /> <span className="text-[#F28878]">
                 Guavas
               </span>{" "}
             </h1>
           </div>
-          <div className="font-oswald font-<weight>  font-semibold uppercase text-4xl text-gray-100  ">
+          <div className="font-oswald font-<weight>  font-semibold uppercase text-4xl text-gray-600  ">
             Groovy Fruit Drink - Guava
           </div>
           <div className="w flex items-center uppercase mt-8">

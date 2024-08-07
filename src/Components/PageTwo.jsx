@@ -13,15 +13,15 @@ import SliderSeven from "./SliderSeven.jsx";
 
 // const sliders = [<Slider />, <SliderTwo />, <SliderThree />, <SliderFour />, <SliderFive />];
 const sliders = [
-  <SliderTwo />,
-  <SliderSix />,
-  <SliderSeven />,
+  // <SliderTwo />,
+  // <SliderSix />,
+  // <SliderSeven />,
 
-  <SliderFour />,
+  // <SliderFour />, Lychee
 
   // <Slider />,
-  <SliderThree />,
-  <SliderFive />,
+  <SliderThree />, 
+  // <SliderFive />,
 ];
 // const sliders = [<Slider />];
 
