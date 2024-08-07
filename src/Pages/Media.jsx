@@ -14,8 +14,8 @@ const Media = () => {
   const allImg = [i1, i2, i3, i4, i5, i6, i7, i8];
 
   return (
-    <div className="container mx-auto px-4 py-8 pt-20">
-      <h1 className="text-2xl font-bold text-center mb-4">Instagram Feed</h1>
+    <div className="container mx-auto px-4 py-8 pt-24">
+      <h1 className="font-semibold text-4xl text-center mb-4">Instagram Feed</h1>
       {/* <InstagramPosts accessToken={accessToken} /> */}
       <div className="flex gap-8 flex-wrap justify-around px-16">
         {allImg.map((val, key) => {
