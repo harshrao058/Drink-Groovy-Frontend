@@ -1,13 +1,13 @@
 import React from 'react';
-import guava from '../../public/banner/guava.png';
+import guava from '../../public/banner/guava.jpg';
 import { LuShoppingBag } from "react-icons/lu";
 
 const SliderThree = () => {
   return (
-    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[]">
+    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[#3AB54A]">
         <div>
           <div className="font-oswald font-<weight>  font-semibold uppercase text-7xl text-white  ">
-            <h1 className="text-[#3AB54A]">
+            <h1 className="text-white ">
               Made With Fresh
               <br /> & Ripe <br /> <span className="text-[#F28878]">
                 Guavas
