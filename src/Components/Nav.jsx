@@ -35,7 +35,7 @@ const Nav = () => {
       <div className="flex items-center gap-16">
         <NavLink to="/">
           <div className="px-4 py-2 rounded-2xl">
-            <img src={logo} alt="Logo" className="w-[7vw] navimg" />
+            <img src={logo} alt="Logo" className="w-[8vw] navimg" />
           </div>
         </NavLink>
         <div className="flex items-center gap-[4vw] uppercase">
