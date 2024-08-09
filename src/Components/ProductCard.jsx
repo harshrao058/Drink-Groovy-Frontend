@@ -1,17 +1,25 @@
 import React from "react";
+import { FaShoppingBag } from "react-icons/fa";
 
 const ProductCard = ({ image, backgroundColor, price, desc }) => {
   return (
     <div className="w-72  rounded-lg overflow-hidden shadow-md h0">
       <div
-        className="h-64 flex items-center justify-center overflow-hidden"
+        className="h-64 flex items-center justify-center overflow-hidden relative"
         style={{ backgroundColor: `#${backgroundColor}` }}
       >
-        <img src={image} alt="Product" className="h-60 py-4 hover:scale-125 transition-all ease-in-out " />
+        <img src={image} alt="Product" className="h-60 py-4 " />
+        <div className="bg-[#1f1f1f10] absolute w-full flex justify-end p-2 h-full opacity-0 hover:opacity-100 transition-all ease-in-out ">
+        <FaShoppingBag className="bg-white text-black p-1 rounded-md hover:text-green-600 " size={28} />
+        
+        </div>
       </div>
-      <p className="tracking-tight py-1 px-4">{desc}</p>
-      <h1 className="font-semibold py-1 px-4">Rs. {price}</h1>
+      <div className="flex justify-between">
 
+      <p className="tracking-tight py-1 px-4">{desc}</p>
+      <h1 className="font-semibold py-1 px-4">₹{price}/-</h1>
+
+      </div>
       
     </div>
   );
