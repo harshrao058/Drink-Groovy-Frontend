@@ -41,7 +41,7 @@ const Features = () => {
         </p>
       </div>
       <div className="my-12 grid grid-cols-1 gap-y-8 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-3 px-8">
-        <div className="border-zinc-200 border-2 py-4 px-4 rounded-xl">
+        <div className="border-zinc-200 shadow-2xl bg-[#197726] border-2 py-4 px-4 rounded-xl">
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <GiFruitTree className="h-9 w-9 text-green-500 " />
           </div>
@@ -53,7 +53,7 @@ const Features = () => {
             serves as a fantastic flavour booster to the drink.
           </p>
         </div>
-        <div className="border-zinc-200 border-2 py-4 px-4 rounded-xl">
+        <div className="border-zinc-200 shadow-2xl bg-[#197726] border-2 py-4 px-4 rounded-xl">
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <IoBan className="h-9 w-9 text-red-500" />
           </div>
@@ -65,7 +65,7 @@ const Features = () => {
             hub. No more fridge full of unloved fruit and veg.
           </p>
         </div>
-        <div className="border-zinc-200 border-2 py-4 px-4 rounded-xl">
+        <div className="border-zinc-200 shadow-2xl bg-[#197726] border-2 py-4 px-4 rounded-xl">
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-gray-100">
             <FaRecycle className="h-9 w-9 text-green-500" />
           </div>

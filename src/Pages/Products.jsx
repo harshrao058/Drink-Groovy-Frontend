@@ -16,6 +16,7 @@ import p7 from "../../public/p7.png";
 
 const products = [
   
+  
 
   {
     image: lemoncard,
@@ -53,6 +54,12 @@ const products = [
     price: "10.00",
     desc: "Anar Juice",
   },
+  {
+    image: p6,
+    backgroundColor: "0E4E29",
+    price: "10.00",
+    desc: "Jeera",
+  },
 ];
 
 const plusProducts = [
@@ -80,12 +87,7 @@ const plusProducts = [
     price: "20.00",
     desc: "Anar Juice",
   },
-  {
-    image: p6,
-    backgroundColor: "0E4E29",
-    price: "20.00",
-    desc: "Jeera",
-  },
+  
   {
     image: p3,
     backgroundColor: "A0CF6E",

@@ -40,7 +40,7 @@ const About = () => {
   return (
     <>
       <div className="pt-20 bg-[#F3F1F8]">
-        <div className="flex w-full px-16 mt-4">
+        {/* <div className="flex w-full px-16 mt-4">
           <div className="w-1/2 justify-center items-center flex px-4 ">
             <img src="https://images.yourstory.com/cs/21/98e25df018b511e988ceff9061f4e5e7/800x4001-1624454935456.png?mode=crop&crop=faces&ar=16%3A9&format=auto&w=1080&q=75" alt="" />
           </div>
@@ -60,7 +60,7 @@ const About = () => {
               high-quality, natural juices.
             </h1>
           </div>
-        </div>
+        </div> */}
         <TimelineComponent />
 
         <div className="w-full flex px-16 bg-[#abf063] py-4">
