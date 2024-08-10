@@ -1,10 +1,10 @@
 import React from 'react';
-import guava from '../../public/banner/guava.jpg';
+import guava from '../../public/newpng/fruitGuava.png';
 import { LuShoppingBag } from "react-icons/lu";
 
 const SliderThree = () => {
   return (
-    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[#3AB54A]">
+    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[#91DB68]">
         <div>
           <div className="font-oswald font-<weight>  font-semibold uppercase text-7xl text-white  ">
             <h1 className="text-white ">
@@ -24,7 +24,7 @@ const SliderThree = () => {
             </h1>
           </div>
         </div>
-        <img src={guava} alt="" className="h-full" />
+        <img src={guava} alt="" className="h-full pb-16" />
       </div>
   );
 };

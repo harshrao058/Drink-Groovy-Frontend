@@ -1,15 +1,15 @@
 import React from 'react';
-import lychee from '../../public/banner/lychee.jpg';
+import lychee from '../../public/newpng/fruitLychyee.png';
 import { LuShoppingBag } from "react-icons/lu";
 
 const SliderFour = () => {
   return (
-    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[#F7C0D7]">
+    <div className="h-screen w-full flex items-center justify-between pl-16 bg-[#EF94A6]">
         <div>
           <div className="font-oswald font-<weight>  font-semibold uppercase text-7xl text-white  ">
             <h1 className="text-[#9D2729]">
               Made With Sweet
-              <br /> & puply <br /> <span className="text-[#ffffff]">
+              & puply <br /> <span className="text-[#ffffff]">
                 Lychees
               </span>{" "}
             </h1>

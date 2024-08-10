@@ -1,10 +1,10 @@
 import React from "react";
-import anar from "../../public/banner/anar.jpg";
+import anar from "../../public/newpng/newAnarBanner.png";
 import { LuShoppingBag } from "react-icons/lu";
 
 const SliderTwo = () => {
   return (
-    <div className="h-screen w-full flex items-center justify-between pl-16  bg-[#FF80A3]">
+    <div className="h-screen w-full flex items-center justify-between pl-16  bg-[#FBB9BB]">
       <div>
         <div className="font-oswald font-<weight>  font-semibold uppercase text-7xl text-white  ">
           <h1 className="text-">
@@ -21,7 +21,7 @@ const SliderTwo = () => {
           </h1>
         </div>
       </div>
-      <img src={anar} alt="" className="h-full" />
+      <img src={anar} alt="" className="h-full mt-16" />
     </div>
   );
 };

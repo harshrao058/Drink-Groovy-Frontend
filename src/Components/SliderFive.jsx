@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import mango from '../../public/banner/mango.jpg';
+import mango from '../../public/newpng/fruitMango.png';
 import { LuShoppingBag } from "react-icons/lu";
 import gsap from 'gsap';
 
@@ -18,7 +18,7 @@ const SliderFive = () => {
           <h1 className='text-[#c0732b]'>
             Made With 
              Topical <br /> <span className="text-[#ffffff]">
-              Manogo
+              Mango
             </span>{" "}
           </h1>
         </div>

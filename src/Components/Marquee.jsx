@@ -114,21 +114,19 @@ const ReviewCard = ({ img, name, username, body }) => {
 
 export default function MarqueeDemo() {
   return (
-    <div className="relative overflow-hidden  text-white">
+    <div className="relative overflow-hidden   text-white">
       <div
         className="relative h-[50vh] bg-fixed bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://embedsocial.com/admin/mediacdn/feed-media/18006/18006077030309004/image_0_large.webp')",
-        }}
+        // style={{
+        //   backgroundImage:
+        //     "url('https://embedsocial.com/admin/mediacdn/feed-media/18006/18006077030309004/image_0_large.webp')",
+        // }}
       >
 
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center ">
-        <h1 className="text-4xl uppercase font tracking-tight  py-8">
+        <div className="absolute inset-0 bg-white flex flex-col items-center ">
+        <h1 className="text-4xl uppercase font tracking-tight text-zinc-800  py-8">
           Our{" "}
-          <span className="text-green-6 border-b-2 border-green-600 ">
             Customers
-          </span>{" "}
           Reviews
         </h1>
 

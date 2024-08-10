@@ -1,5 +1,6 @@
 import React from "react";
 import slide1 from "../../public/slide1.jpg";
+import fruitLemon from "../../public/newpng/fruitLemon.png";
 import { Link } from "react-router-dom";
 import { LuShoppingBag } from "react-icons/lu";
 
@@ -7,12 +8,12 @@ import { LuShoppingBag } from "react-icons/lu";
 const Slider = () => {
   return (
     <>
-      <div className="h-screen w-full flex items-center justify-between px-16 bg-[#DAF253]">
+      <div className="h-screen w-full flex items-center justify-between px-16 bg-[#F5DE30]">
         <div>
           <div className="font-oswald font-<weight>  font-semibold uppercase text-7xl text-white  ">
             <h1 className="">
               Made With Mint
-              <br /> And <br /> <span className="text-[#33810A]">
+               And <br /> <span className="text-[#33810A]">
                 Lemon
               </span>{" "}
             </h1>
@@ -27,7 +28,7 @@ const Slider = () => {
             </h1>
           </div>
         </div>
-        <img src={slide1} alt="" className="h-full" />
+        <img src={fruitLemon} alt="" className="h-full" />
       </div>
     </>
   );

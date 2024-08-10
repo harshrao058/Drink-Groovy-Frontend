@@ -11,7 +11,7 @@ const Working = () => {
       <div className="whitespace-pre-wrap w-full  text-3xl font-semibold tracking-tighter text-white bg-green-900 flex itmes-center justify-between px-4 py-2">
         <div className="flex  items-center justify-center gap-2 w-1/3">
           <div className="flex items-center gap-2">
-            <PiCity className="text-2xl" />
+            <PiCity className="h-16" />
             <h1 className="text-2xl">States</h1>
           </div>
 

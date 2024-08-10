@@ -103,7 +103,7 @@ const NewMarquee = () => {
   ];
 
   return (
-    <div className="overflow-hidden whitespace-nowrap flex font-semibold uppercase bg-orange-600">
+    <div className="overflow-hidden whitespace-nowrap flex font-semibold uppercase bg-orange-500">
       <div className="flex animate-marquee">
         {items.map((item, index) => (
           <div
@@ -111,7 +111,7 @@ const NewMarquee = () => {
             className="flex-shrink-0 m-2 flex font-semibold items-center"
           >
             {typeof item === "string" && !item.endsWith(".png") ? (
-              <span className="text-3xl tracking-tight font-semibold text-white transition-all ease-in-out hover:scale-105">
+              <span className="text-2xl tracking-tight font-semiold text-white transition-all ease-in-out hover:scale-105 ">
                 {item}
               </span>
             ) : (

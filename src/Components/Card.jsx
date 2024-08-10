@@ -12,7 +12,7 @@ const Card = () => {
     <div className={"flex px-16 flex-wrap items-center justify-between gap-8"}>
       <div className="flex w-full justify-between ">
         <MagicCard
-          className="cursor-pointer w-96 h-96 flex-col items-center  justify-center whitespace-nowrap text-4xl bg-[#FD3654]"
+          className="cursor-pointer w-96 h-96 flex-col items-center  justify-center whitespace-nowrap text-4xl bg-[#ffffff]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
           <div className="p-16">
@@ -22,7 +22,7 @@ const Card = () => {
           </div>
         </MagicCard>
         <MagicCard
-          className="cursor-pointer w-96 h-96 flex-col items-center justify-center whitespace-nowrap text-4xl bg-[#46B962]"
+          className="cursor-pointer w-96 h-96 flex-col items-center justify-center whitespace-nowrap text-4xl bg-[#ffffff]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
           <div className="p-16">
@@ -32,7 +32,7 @@ const Card = () => {
           </div>
         </MagicCard>
         <MagicCard
-          className="cursor-pointer w-96 h-96 flex-col items-center justify-center whitespace-nowrap text-4xl bg-[#70C60B]"
+          className="cursor-pointer w-96 h-96 flex-col items-center justify-center whitespace-nowrap text-4xl bg-[#ffffff]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
           <div className="p-16">
@@ -44,7 +44,7 @@ const Card = () => {
       </div>
       <div className="flex w-full justify-between">
         <MagicCard
-          className="cursor-pointer w-96 h-96 flex-col items-center justify-center whitespace-nowrap text-4xl bg-[#FD3654]"
+          className="cursor-pointer w-96 h-96 flex-col items-center justify-center whitespace-nowrap text-4xl bg-[#ffffff]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
           <div className="p-16">
@@ -54,7 +54,7 @@ const Card = () => {
           </div>
         </MagicCard>
         <MagicCard
-          className="cursor-pointer w-96 h-96 flex-col items-center justify-center whitespace-nowrap text-4xl bg-[#FF8B00]"
+          className="cursor-pointer w-96 h-96 flex-col items-center justify-center whitespace-nowrap text-4xl bg-[#ffffff]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
           <div className="p-16">
@@ -64,7 +64,7 @@ const Card = () => {
           </div>
         </MagicCard>
         <MagicCard
-          className="cursor-pointer w-96 h-96 flex-col items-center justify-center whitespace-nowrap text-4xl bg-[#FC7105]"
+          className="cursor-pointer w-96 h-96 flex-col items-center justify-center whitespace-nowrap text-4xl bg-[#ffffff]"
           gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
         >
           <div className="p-16">
