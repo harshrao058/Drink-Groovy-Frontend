@@ -2,7 +2,7 @@ import React from "react";
 
 const OurStory = () => {
   return (
-    <div className="flex flex-col lg:flex-row w-full px-4 lg:px-16 pt-16 lg:pt-32">
+    <div className="flex flex-col lg:flex-row w-full px-4 lg:px-16 pt-16 lg:pt-32 h-[100vh]">
       <div className="w-full lg:w-1/2 flex justify-center items-center px-4 lg:px-8 mb-8 lg:mb-0">
         <img
           src="https://images.yourstory.com/cs/21/98e25df018b511e988ceff9061f4e5e7/800x4001-1624454935456.png?mode=crop&crop=faces&ar=16%3A9&format=auto&w=1080&q=75"
@@ -14,7 +14,7 @@ const OurStory = () => {
         <h1 className="text-3xl lg:text-4xl font-semibold text-center lg:text-left w-full">
           Our Story
         </h1>
-        <p className="text-lg lg:text-xl">
+        <p className="text-lg lg:text-xl text-justify">
           The journey of Groovy starts from a dream of{" "}
           <span className="bg-zinc-800 text-white px-2 ">2 brothers</span> to
           create an honest & impactful brand to reflect their uncompromising

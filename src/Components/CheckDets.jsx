@@ -19,16 +19,16 @@ const CheckDets = () => {
       ></div>
       <div className="w-1/3 pr-16">
         <h1 className="text-8xl text-center uppercase text-white tracking-tighter leading-[5rem]">
-          100% Organic Product
+          100% Gluten Free
         </h1>
       </div>
-      <img src={leaf} alt="" className="w-20 absolute top-10 right-24" />
-      <img src={leaf2} alt="" className="w-20 absolute top-60 right-96" />
-      <img src={leaf3} alt="" className="w-20 absolute top-16 left-24" />
+      <img src={leaf} alt="" className="move-img w-20 absolute top-10 right-24" />
+      <img src={leaf2} alt="" className="move-img1 w-20 absolute top-60 right-96" />
+      <img src={leaf3} alt="" className="move-img w-20 absolute top-16 left-24" />
       <img
         src={leaf}
         alt=""
-        className="w-20 absolute bottom-36 left-24 rotate-90"
+        className="move-img1 w-20 absolute bottom-36 left-24 rotate-90"
       />
     </div>
   );

@@ -23,7 +23,7 @@ const Gallery = () => {
 
   return (
     <div className="pt-16">
-      <div className="flex px-16 flex-col items-center">
+      <div className="flex px-16 h-[100vh] flex-col items-center">
         <h2 className="mt-8 text-4xl items-center justify-center leading-tight w-full text-black sm:text-4xl lg:text-4xl flex flex-col mb-4">
           <p className="font-semibold text-4xl">Our Distributors</p>
         </h2>
